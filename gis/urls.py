@@ -17,5 +17,7 @@ from django.conf.urls import url
 from gis import views
 
 urlpatterns = [
-    url('^$', views.home, name='home')
+    url('^$', views.home, name='home'),
+    url(r'^home', views.home, name='home'),
+    url(r'^about/$', views.about, name='about'),
 ]
