@@ -20,4 +20,5 @@ urlpatterns = [
     url('^$', views.home, name='home'),
     url(r'^home', views.home, name='home'),
     url(r'^about/$', views.about, name='about'),
+    url(r'^articles/(?P<article_id>[0-9]+)/$', views.show_articles, name='article'),
 ]
