@@ -19,6 +19,7 @@ from gis import views
 urlpatterns = [
     url('^$', views.home, name='home'),
     url(r'^home', views.home, name='home'),
+    url(r'^map/$', views.map, name='map'),
     url(r'^about/$', views.about, name='about'),
     url(r'^articles/(?P<article_id>[0-9]+)/$', views.show_articles, name='article'),
 ]
